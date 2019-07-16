@@ -1,0 +1,13 @@
+  version: '3.7'
+
+  services:
+    minecraft:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports: 
+      - 25565:25565
+      command:
+        - "./launch.sh"
+      volumes:
+      - ./world:/data/world

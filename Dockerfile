@@ -37,4 +37,3 @@ RUN chmod +x launch.sh
 
 # /start runs it.
 CMD ["./launch.sh"]
-
