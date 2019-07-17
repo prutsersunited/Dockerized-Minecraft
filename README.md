@@ -4,3 +4,9 @@
 
 # docker-technicpack-minecraft
 A simple dockerfile to start up TechnicPack servers
+
+## Work in progress
+**Todo:**
+- Make image size smaller
+- Remove unneeded file copies
+- Use environment settings to configure minecraft server
