@@ -10,3 +10,8 @@ A simple dockerfile to start up TechnicPack servers
 - Make image size smaller
 - Remove unneeded file copies
 - Use environment settings to configure minecraft server
+
+
+**Build instructions**
+- Build latest image locally: `docker build . -t minecraft-docker-server:latest`
+  Do this before running `docker-compose up`
