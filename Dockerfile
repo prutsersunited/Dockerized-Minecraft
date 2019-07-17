@@ -16,13 +16,13 @@ RUN	mkdir /data
 WORKDIR	/data
 
 # Load in all of our config files.
-ADD ops.json /data/
-ADD whitelist.json /data/
+ADD /server/ops.json /data/
+ADD /server/whitelist.json /data/
 ADD launch.sh /data/
-ADD banned-ips.json /data/
-ADD banned-players.json /data/
-ADD eula.txt /data/
-ADD server.properties /data/
+ADD /server/banned-ips.json /data/
+ADD /server/banned-players.json /data/
+ADD /server/eula.txt /data/
+ADD /server/server.properties /data/
 
 # download technicpack
 RUN curl -s "http://files.theclassicpack.com/SERVER/TCP-3.0.9c_SERVER.zip" -o /data/_SERVER.zip
