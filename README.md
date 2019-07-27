@@ -26,7 +26,7 @@ Follow these steps to setup your minecraft server:
   
 **3). Run the image with docker-compose.yml**
 - Copy, paste and edit the 'docker-compose.yml'
-  ```yml
+```yml
 version: '3.7'
 
 volumes:
@@ -72,4 +72,4 @@ services:
       - USE_NATIVE_TRANSPORT=true
       - MOTD=PrutsersUnited Minecraft Server
       - ENABLE_RCON=false
-  ```
+```
