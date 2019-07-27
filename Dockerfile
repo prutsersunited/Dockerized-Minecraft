@@ -13,8 +13,10 @@ WORKDIR /data
 
 COPY --from=base /data /data
 COPY /server/* /data/
-COPY launch.sh /data/launch.sh
-RUN chmod +x /data/launch.sh
+COPY run.sh /data/run.sh
+RUN chmod +x /data/run.sh
 RUN mkdir -p mods/disabled
 
-ENTRYPOINT ["./launch.sh"]
+RUN apk --update add --no-cache bash
+
+ENTRYPOINT ["./run.sh"]
